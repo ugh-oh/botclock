@@ -1,5 +1,6 @@
 const {Listener} = require('discord-akairo');
 
+// can be deleted, just says fuckin 'ready' when its online. Has no other effect.
 class ReadyListener extends Listener {
     constructor() {
         super('ready', {

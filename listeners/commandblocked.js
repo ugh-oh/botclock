@@ -1,6 +1,6 @@
 const {Listener} = require('discord-akairo');
 
-// If command blocked, notify in console.log
+// If user attempts a command that shouldn't be executed by them, it will show up in console.log
 
 class CommandBlockedListener extends Listener {
     constructor() {

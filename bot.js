@@ -1,5 +1,8 @@
 // DOCS: https://www.discord.js/
 // DOCS: https://www.discord-akairo.github.io/#/docs/
+
+
+require('dotenv').config();
 const { AkairoClient, CommandHandler, InhibitorHandler, ListenerHandler } = require('discord-akairo');
 
 class MyClient extends AkairoClient {
@@ -46,4 +49,4 @@ class MyClient extends AkairoClient {
 }
 
 const client = new MyClient();
-client.login('ODIxMzM3OTIzNTYzNjgzODUw.YFCQjA.QN1ezbJUvS7fh30hNo4VbJuLBVE');
+client.login(process.env.TOKEN);
